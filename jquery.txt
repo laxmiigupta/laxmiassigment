@@ -1,33 +1,208 @@
-	FO-46 Blog functionality
+Assignment (Jquery)
 
-	Total Estimate hours - 2:50 hours
 
-	Discussion - 20 Minutes
 
-	Total estimated hours for each action point - 3:30 Hours
-	- Need to set WP database details in blog import  - 1 hour  
-	- Need to copy image embedded in the Wordpress blog posts, copy the folder wp_content/uploads found in Wordpress to the folder pub/media/wysiwyg/ in Mageplaza Blog - 30 Minutes
+1.What is jQuery? 
+jQuery is a popular JavaScript library that simplifies the process of interacting with HTML documents, handling events, performing animations, and making Ajax requests. It was designed to make web development tasks easier and more efficient by providing a concise and intuitive API (Application Programming Interface) for manipulating HTML elements and managing dynamic content on web pages.
 
-	- Need to check adding blogs showing frontend proper or not . - 1 Hours
-	
-FO-46 : Blog functionality
-Assignee: Vivek Sir 
+jQuery allows developers to write shorter and more readable code compared to plain JavaScript, as it abstracts away many complex cross-browser compatibility issues and provides a consistent interface across different web browsers. It simplifies tasks such as traversing and manipulating the DOM (Document Object Model), handling events, and making asynchronous HTTP requests.
 
-Estimated hours: 3:50 hours
+Some key features and benefits of jQuery include:
 
-Actual hours: 2 hours
+(i). DOM manipulation: jQuery provides a set of methods that make it easy to select and manipulate HTML elements, change their attributes or content, add or remove elements, and apply CSS styles.
 
-Discussion: 20 Minutes
+(ii). Event handling: jQuery simplifies the process of adding event listeners to elements and handling user interactions such as clicks, mouse movements, and keyboard input.
 
-Total estimated hours for each action point: 3:30 Hours
-1. Need to set WordPress database details in blog import  - 1 hour  
-2. Need to copy image embedded in the Wordpress blog posts, copy the folder wp_content/uploads found in Wordpress to the folder 			 pub/media/wysiwyg/ in Mageplaza Blog - 30 Minutes
-3. if images not showing in blog pages so i will adding images manually - 1 hour 
-4. Need to check adding blogs showing frontend proper or not . - 1 Hours
+(iii). Animation effects: jQuery includes a range of animation methods that allow developers to create smooth and visually appealing effects, such as fading elements in and out, sliding elements, and creating custom animations.
 
-Questions:
-1. i will refer this docs for blog import https://www.mageplaza.com/blog/how-import-blog-wordpress-aheadworks-blog-magefan-blog-magento-2.html this is correct ? 
+(iv). Ajax support: jQuery provides a simple and convenient way to make Ajax requests, enabling developers to fetch data from a server without reloading the entire web page. It supports various HTTP methods, handles the response asynchronously, and provides callback functions for handling success or error scenarios.
 
-Prerequisites: 
-1. WordPress Database details & Staging site Login details
+(v). Cross-browser compatibility: jQuery takes care of many browser-specific inconsistencies and provides a unified API that works consistently across different browsers, reducing the need for writing browser-specific code.
 
+2.How to Apply CSS Using JQuery, How to Add Class and Remove Class in
+Jquery, JQuery Animation?
+
+Applying CSS Using jQuery:
+To apply CSS styles using jQuery, you can use the `css()` method. This method allows you to get or set the value of CSS properties for selected elements. Here's an example of applying CSS styles using jQuery:
+
+javascript
+// Applying CSS styles to an element with id "myElement"
+$('#myElement').css('color', 'red');
+$('#myElement').css('background-color', 'yellow');
+
+
+In this example, the `css()` method is used to set the color property to red and the background-color property to yellow for the element with the ID "myElement".
+
+Adding and Removing Classes in jQuery:
+To add or remove classes from elements using jQuery, you can use the `addClass()` and `removeClass()` methods respectively. These methods allow you to manipulate the classes of selected elements. Here's an example:
+
+javascript
+// Adding a class to an element with id "myElement"
+$('#myElement').addClass('highlight');
+
+// Removing a class from an element with id "myElement"
+$('#myElement').removeClass('highlight');
+
+
+In this example, the `addClass()` method adds the class "highlight" to the element with the ID "myElement", while the `removeClass()` method removes the class "highlight" from the same element.
+
+jQuery Animation:
+jQuery provides a range of animation methods to create dynamic and visually appealing effects on web pages. Some commonly used animation methods include `fadeIn()`, `fadeOut()`, `slideUp()`, `slideDown()`, `animate()`, and more.
+
+Here's an example of using the `fadeIn()` and `fadeOut()` methods to create a simple fade-in and fade-out effect:
+
+javascript
+// Fading in an element with id "myElement"
+$('#myElement').fadeIn();
+
+// Fading out an element with id "myElement"
+$('#myElement').fadeOut();
+
+
+In this example, the `fadeIn()` method gradually increases the opacity of the element to make it appear, while the `fadeOut()` method gradually decreases the opacity to make it disappear.
+
+The `animate()` method is a more versatile animation method that allows you to animate multiple CSS properties simultaneously. Here's an example:
+
+javascript
+// Animating the width and height of an element with id "myElement"
+$('#myElement').animate({
+  width: '200px',
+  height: '300px'
+}, 1000);
+
+
+In this example, the `animate()` method animates the width and height of the element to 200 pixels and 300 pixels respectively over a duration of 1000 milliseconds (1 second).
+
+3.How to create slider with animation?
+Html: 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
+
+
+</head>
+<body>
+    <div class="owl-carousel">
+        <div class="items">
+            <img src="images/slider1.jpg" alt="Slide 1">
+            <div class="extra-content">
+                <h1>Nothing will work unless you do</h1>
+                <button class="next-button">click here</button>
+            </div>
+        </div>
+        <div class="items">
+            <img src="images/silder2.jpg" alt="Slide 2">
+            <div class="extra-content">
+                <h1>A fine quotation is a diamond on the finger of a man of wit, and a pebble in the hand of a fool.
+                </h1>
+                <button class="next-button">click here</button>
+            </div>
+        </div>
+        <div class="items">
+          <img src="images/slider3.jpg" alt="Slide 3">
+          <div class="extra-content">
+                <h1>Many people think of prosperity that concerns money only to forget that true prosperity is of the mind.</h1>
+                <button class="next-button">click here</button>
+          </div>
+        </div>
+        <div class="items">
+          <img src="images/image2.jpg" alt="Slide 3">
+          <div class="extra-content">
+                <h1>Peace comes from within. Do not seek it without</h1>
+                <button class="next-button">click here</button>
+          </div>
+        </div>
+        <div class="items">
+          <img src="images/image3.jpg" alt="Slide 3">
+          <div class="extra-content">
+                <h1>The more light you allow within you, the brighter the world you live in will be.</h1>
+                <button class="next-button">click here</button>
+          </div>
+        </div>
+    </div>
+   
+     <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+
+
+    <script src="script.js"></script>
+ </body>
+</html>
+
+CSS: 
+*{
+
+
+    margin: 0;
+    padding: 0;
+}
+ 
+    .items img {
+    width: 100%;
+    height: 750px;
+  }
+  .items{
+    position: relative;
+  }
+ 
+  .extra-content{
+    box-shadow: 0 10px 8px rgba(12, 207, 168, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+   
+  }
+  .extra-content h1 {
+    color: white;
+    font-size: 32px;
+    font-style: italic;
+    padding: 20px 0;
+}
+
+
+.extra-content button {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 500;
+    height: 50px;
+    width: 120px;
+    background: transparent;
+    background-color: #24e644;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    /* box-shadow: 0 10px 8px rgba(12, 207, 168, 0.3); */
+
+
+}
+
+
+.extra-content button:hover{
+    background-color: rgb(195, 122, 26);
+}
+SCRIPT:
+
+
+$(document).ready(function() {
+    var owl = $('.owl-carousel').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10
+    });
+    //this button use for change slider using click event
+    $('.next-button').on('click', function() {
+        owl.trigger('next.owl.carousel');
+    });
+  });
+ 
