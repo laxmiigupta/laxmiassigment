@@ -1,0 +1,33 @@
+	FO-46 Blog functionality
+
+	Total Estimate hours - 2:50 hours
+
+	Discussion - 20 Minutes
+
+	Total estimated hours for each action point - 3:30 Hours
+	- Need to set WP database details in blog import  - 1 hour  
+	- Need to copy image embedded in the Wordpress blog posts, copy the folder wp_content/uploads found in Wordpress to the folder pub/media/wysiwyg/ in Mageplaza Blog - 30 Minutes
+
+	- Need to check adding blogs showing frontend proper or not . - 1 Hours
+	
+FO-46 : Blog functionality
+Assignee: Vivek Sir 
+
+Estimated hours: 3:50 hours
+
+Actual hours: 2 hours
+
+Discussion: 20 Minutes
+
+Total estimated hours for each action point: 3:30 Hours
+1. Need to set WordPress database details in blog import  - 1 hour  
+2. Need to copy image embedded in the Wordpress blog posts, copy the folder wp_content/uploads found in Wordpress to the folder 			 pub/media/wysiwyg/ in Mageplaza Blog - 30 Minutes
+3. if images not showing in blog pages so i will adding images manually - 1 hour 
+4. Need to check adding blogs showing frontend proper or not . - 1 Hours
+
+Questions:
+1. i will refer this docs for blog import https://www.mageplaza.com/blog/how-import-blog-wordpress-aheadworks-blog-magefan-blog-magento-2.html this is correct ? 
+
+Prerequisites: 
+1. WordPress Database details & Staging site Login details
+
